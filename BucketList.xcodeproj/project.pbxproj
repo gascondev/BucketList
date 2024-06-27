@@ -20,6 +20,7 @@
 /* Begin PBXFileReference section */
 		55B493AD2C2D191F00656069 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		55B493AF2C2D2F5100656069 /* ContentView-ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-ViewModel.swift"; sourceTree = "<group>"; };
+		55B493B12C2D3FB900656069 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		55BA31742C24873B000A6EAE /* BucketList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BucketList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BA31772C24873B000A6EAE /* BucketListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketListApp.swift; sourceTree = "<group>"; };
 		55BA31792C24873B000A6EAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +60,7 @@
 		55BA31762C24873B000A6EAE /* BucketList */ = {
 			isa = PBXGroup;
 			children = (
+				55B493B12C2D3FB900656069 /* Info.plist */,
 				55BA31772C24873B000A6EAE /* BucketListApp.swift */,
 				55BA31792C24873B000A6EAE /* ContentView.swift */,
 				55B493AF2C2D2F5100656069 /* ContentView-ViewModel.swift */,
@@ -290,7 +292,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
+				INFOPLIST_FILE = BucketList/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock places.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -319,7 +322,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BucketList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSFaceIDUsageDescription = "We need to unlock your data";
+				INFOPLIST_FILE = BucketList/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Please authenticate yourself to unlock places.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
