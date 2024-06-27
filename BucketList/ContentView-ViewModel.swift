@@ -18,6 +18,9 @@ extension ContentView {
         var selectedPlace: Location?
         var isUnlocked = false
         
+        var authenticationError = "Uncknow error"
+        var isShowingAuthenticationError = false
+        
         let savePath = URL.documentsDirectory.appending(path: "SavedPlaces")
         
         init() {
@@ -55,6 +58,10 @@ extension ContentView {
             }
         }
         
+        func delete(location: Location) {
+            locations.removeAll { $0.id == location.id }
+        }
+        
         func authenticate() {
             let context = LAContext()
             var error: NSError?
@@ -66,11 +73,14 @@ extension ContentView {
                     if success {
                         self.isUnlocked = true
                     } else {
-                        //error
+                        self.authenticationError = "There was a problem authenticated you; please try again."
+                        self.isShowingAuthenticationError = true
                     }
                 }
             } else {
                 // no biometrics
+                authenticationError = "Sorry, your device does not support biometric authentication."
+                isShowingAuthenticationError = true
             }
         }
     }
